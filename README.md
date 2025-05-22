@@ -27,25 +27,25 @@
 ## Создание директории для проекта
 Создает директорию для приложения на локальной машине.
 ```bash
-  mkdir -p /home/denis/adm-app
+  mkdir -p /home/denis/app
 ```
 
 ## Создание директории для приложения
 Создает директорию для развертывания приложения.
 ```bash
-  sudo mkdir -p /var/www/adm-app
+  sudo mkdir -p /var/www/app
 ```
 
 ## Изменение владельца директории
-Назначает пользователя `denis` владельцем директории `/var/www/adm-app`.
+Назначает пользователя `denis` владельцем директории `/var/www/app`.
 ```bash
-  sudo chown -R denis:denis /var/www/adm-app
+  sudo chown -R denis:denis /var/www/app
 ```
 
 ## Переход в рабочую директорию
 Переходит в директорию с проектом.
 ```bash
-  cd /home/denis/adm-app
+  cd /home/denis/app
 ```
 
 ## Клонирование репозитория
@@ -69,7 +69,7 @@
 ## Копирование JAR-файла
 Копирует собранный JAR-файл в директорию развертывания.
 ```bash
-  sudo cp target/adm-0.0.1-SNAPSHOT.jar /var/www/adm-app.jar
+  sudo cp target/adm-0.0.1-SNAPSHOT.jar /var/www/app.jar
   sudo chmod 755 /var/www/app
 ```
 
