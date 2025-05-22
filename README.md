@@ -70,6 +70,7 @@
 Копирует собранный JAR-файл в директорию развертывания.
 ```bash
   sudo cp target/adm-0.0.1-SNAPSHOT.jar /var/www/adm-app.jar
+  sudo chmod 755 /var/www/app
 ```
 
 ## Создание конфигурации службы
