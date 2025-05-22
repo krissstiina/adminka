@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Детали заказа</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+<h1>Детали заказа #<span th:text="${order.id}"></span></h1>
+<div>
+    <p><strong>Клиент:</strong> <span th:text="${order.customerName}"></span></p>
+    <p><strong>Телефон:</strong> <span th:text="${order.phoneNumber}"></span></p>
+    <p><strong>Цветы:</strong></p>
+    <ul>
+        <li th:each="flower : ${order.flowers}">
+            <span th:text="${flower.name} + ' (' + ${flower.color} + ') - ' + ${flower.price} + 'р'"></span>
+        </li>
+    </ul>
+    <p><strong>Общая сумма:</strong>
+        <td th:text="${#numbers.formatDecimal(order.totalPrice, 1, 2)} + 'р'"></td>
+    </p>
+</div>
+<a th:href="@{/orders}">Назад к списку</a>
+</body>
+</html>

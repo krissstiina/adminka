@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Main Page</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+<h1>Добро пожаловать в магазин цветов!</h1>
+<nav>
+    <a th:href="@{/orders}">Заказы</a> |
+    <a th:href="@{/flowers}">Цветы</a>
+</nav>
+</body>
+</html>

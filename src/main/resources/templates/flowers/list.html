@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Список заказов</title>
+  <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+<h1>Список цветов</h1>
+<table>
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>Название</th>
+    <th>Цвет</th>
+    <th>Цена</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr th:each="flower : ${flowers}">
+    <td th:text="${flower.id}"></td>
+    <td th:text="${flower.name}"></td>
+    <td th:text="${flower.color}"></td>
+    <td th:text="${flower.price}"></td>
+    <td>
+    </td>
+    <td>
+        <button type="submit">Удалить</button>
+    </td>
+  </tr>
+  </tbody>
+</table>
+</body>
+</html>
