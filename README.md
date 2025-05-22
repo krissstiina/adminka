@@ -125,6 +125,7 @@ sudo cp target/adminka-1.0-SNAPSHOT.jar /var/www/app.jar
 Проверяет права доступа к JAR-файлу приложения.
 ```bash
   ls -l /var/www/adm-app.jar
+sudo chmod 755 /var/www/app.jar
 ```
 
 ## Создание конфигурации Nginx
