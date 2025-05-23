@@ -101,6 +101,7 @@ sudo cp target/adminka-1.0-SNAPSHOT.jar /var/www/app.jar
 Перечитывает конфигурацию systemd для применения изменений.
 ```bash
   sudo systemctl daemon-reload
+sudo chown kris:kris /var/www/app.jar
 ```
 
 ## Включение автозапуска службы
