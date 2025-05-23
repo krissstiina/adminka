@@ -37,7 +37,7 @@
 ```
 
 ## Изменение владельца директории
-Назначает пользователя `denis` владельцем директории `/var/www/app`.
+Назначает пользователя `kristina` владельцем директории `/var/www/app`.
 ```bash
   sudo chown -R kristina:kristina /var/www/app
 ```
