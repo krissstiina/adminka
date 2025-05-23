@@ -27,7 +27,7 @@
 ## Создание директории для проекта
 Создает директорию для приложения на локальной машине.
 ```bash
-  mkdir -p /home/denis/app
+  mkdir -p /home/kristina/app
 ```
 
 ## Создание директории для приложения
@@ -39,19 +39,19 @@
 ## Изменение владельца директории
 Назначает пользователя `denis` владельцем директории `/var/www/app`.
 ```bash
-  sudo chown -R denis:denis /var/www/app
+  sudo chown -R kristina:kristina /var/www/app
 ```
 
 ## Переход в рабочую директорию
 Переходит в директорию с проектом.
 ```bash
-  cd /home/denis/app
+  cd /home/kristina/app
 ```
 
 ## Клонирование репозитория
 Клонирует репозиторий с исходным кодом приложения.
 ```bash
-  git clone https://github.com/sotovdenis/adm.git
+  git clone https://github.com/krissstiina/adminka.git
 ```
 
 ## Переход в директорию проекта
@@ -90,7 +90,7 @@ sudo cp target/adminka-1.0-SNAPSHOT.jar /var/www/app.jar
   Restart=always
   RestartSec=5
   SyslogIdentifier=springapp
-  User=denis
+  User=kristina
   Environment=SPRING_PROFILES_ACTIVE=prod
 
   [Install]
@@ -101,7 +101,7 @@ sudo cp target/adminka-1.0-SNAPSHOT.jar /var/www/app.jar
 Перечитывает конфигурацию systemd для применения изменений.
 ```bash
   sudo systemctl daemon-reload
-sudo chown kris:kris /var/www/app.jar
+sudo chown kristina:kristina /var/www/app.jar
 ```
 
 ## Включение автозапуска службы
